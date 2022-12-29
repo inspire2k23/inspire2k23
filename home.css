@@ -1,0 +1,402 @@
+
+*
+{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+body
+{
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+.room
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background: whitesmoke; */
+}
+nav
+{
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+nav ul li a:hover
+{
+    color: rgb(158, 158, 184);
+}
+.logo
+{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.link1
+{
+    border-bottom: 2px solid white;
+    padding-bottom: 2px ;
+}
+footer
+{
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+footer ul
+{
+    display: flex;
+    list-style: none;
+}
+footer ul li a
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+.card_container 
+{
+    max-width: 100vw;
+    display: grid;
+    padding: 40px 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+}
+.card_block
+{ 
+    width: 300px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    background: #000;
+    /* border-radius: 20px; */
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+.cardface 
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+}
+h2 
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 900;
+}
+.card_face1 
+{
+    box-sizing: border-box;
+    padding: 20px;
+}
+.temp1 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp2 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp3 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp4 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp5 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp6 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp7 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp8 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp9 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.temp10 
+{
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.register_link_block
+{
+    display: flex;
+    justify-content: center;
+}
+.register_link_block a
+{
+    color: white;
+    text-decoration: none;
+    padding: 6px 20px;
+    background: rgb(63, 63, 164);
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5 ease-in-out;
+    font-weight: 600;
+}
+.register_link_block :hover
+{
+    color: black;
+    background: white;
+}
+h2 
+{
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card_face2
+{
+    transition: 0.5s;
+}
+.card_block:hover .cardface.card_face2 
+{
+  height: 60px;
+}
+h2 
+{
+    font-size: 40px;
+    /* text-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 30px #fff,0 0 80px #fff,0 0 120px #fff; */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3
+{
+    font-size: 33px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.card_block:nth-child(1) .cardface.card_face2 
+{
+    background-color: #0f00de;
+    /* background-image: linear-gradient(90deg, #0f00de 0%, #95468e 50%, #ffffff 100%); */
+    /* background-image: url(image/itmanager.jpg); */
+    background-image: url(itmanager.jpg);
+    background-position: center;
+    object-fit: fill;
+    /* border-radius: 15px; */
+    background-repeat: no-repeat;
+}
+.card_block:nth-child(2) .cardface.card_face2 
+{
+    background-color: #955195;
+    /* background-image: linear-gradient(0deg, #955195 0%, #5a929b 100%); */
+    /* background-image: url(/image/techcoding.jpg); */
+    background-image: url(techcoding.jpg);
+    background-position: center;
+    /* border-radius: 15px; */
+    background-repeat: no-repeat;
+}
+.card_block:nth-child(3) .cardface.card_face2 
+{
+    background-color: #d50040;
+    /* background-image: linear-gradient(62deg, #d50040 0%, #403553 100%); */
+    background-image: url(3.png);
+    background-position: center;
+    /* border-radius: 15px; */
+    background-repeat: no-repeat;
+}
+.card_block:nth-child(4) .cardface.card_face2 
+{
+    background-color: #8EC5FC;
+    /* background-image: linear-gradient(62deg, #8EC5FC 0%, #413553 100%); */
+    background-image: url(treasurehunt.jpg);
+    background-position: center;
+    /* border-radius: 15px; */
+    background-repeat: no-repeat;
+}
+.card_block:nth-child(5) .cardface.card_face2 
+{
+    background-color: #00DBDE;
+    /* background-image: linear-gradient(90deg, #00DBDE 0%, #958446 100%); */
+    /* background-image: url(/static/images/5.jpg); */
+    /* background-image: url(/static/images/pictionary.jpeg);  */
+        background-image: url(pict.jpg);
+    background-position: center;
+    object-fit:fill;
+    /* border-radius: 15px; */
+    /* background-repeat: no-repeat; */
+}
+.card_block:nth-child(6) .cardface.card_face2 
+{
+    background-color: #7a70b3;
+    /* background-image: linear-gradient(90deg, #00DBDE 0%, #958446 100%); */
+    /* background-image: url(/static/images/6.png); */
+    background-image: url(8.jpeg);
+    background-position: center;
+    /* border-radius: 15px; */
+    background-repeat: no-repeat;
+}
+.card_block:nth-child(7) .cardface.card_face2 
+{
+    background-color: #ffffff;
+    /* background-image: linear-gradient(180deg, #ffffff 1%, #6284FF 82%, #FF0000 99%); */
+    background-image: url(7.jpeg);
+    background-position: center;
+    /* border-radius: 15px; */
+}
+.card_block:nth-child(8) .cardface.card_face2 
+{
+    background-color: #D9AFD9;
+    /* background-image: linear-gradient(191deg, #D9AFD9 0%, #97D9E1 100%); */
+    background-image: url(logo_design.jpg);
+    /* background-image: url(/static/images/8.jpeg); */
+    background-position: center;
+    /* border-radius: 15px; */
+}
+.card_block:nth-child(9) .cardface.card_face2 
+{
+    background-color: #535195;
+    /* background-image: linear-gradient(105deg, #535195 31%, #5a929b 73%, #fa3f17 88%); */
+    /* border-radius: 15px; */
+    background-position: center;
+    background-image: url(camera.jpg);
+    object-fit: cover;
+
+}
+.card_block:nth-child(10) .cardface.card_face2 
+{
+  /* border-radius: 15px; */
+  /* background-image: url(default.png); */
+  background-color: #0093E9;
+  background-position: center;
+  /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+ 
+}   
+
+
+
+/* --------------------------------responsive ---------------------- */
+@media only screen and (max-width:800px)
+    {
+        nav ul li a
+        {
+            letter-spacing: 0;
+            font-size: 12px;
+        }   
+    }
+    @media only screen and (max-width:500px)
+    {
+        nav ul li a
+        {
+            letter-spacing: 0;
+            font-size: 12px;
+            margin-right: 2px;
+        }   
+        nav
+        {
+            width: 100%;
+        }
+        nav ul
+        {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li a
+        {
+            color: white;
+            text-decoration: none;
+            margin-right: 8px;
+            letter-spacing: 1px;
+        }
+        
+        nav ul li a:hover
+        {
+            color: rgb(158, 158, 184);
+        }
+        .logo
+        {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 600px)
+    {
+        nav ul li a
+        {
+            letter-spacing: 0;
+            font-size: 12px;
+        }   
+    }
+    @media only screen and (min-width: 768px)
+    {
+        nav ul li a
+        {
+            letter-spacing: 0;
+            font-size: 20px;
+        }   
+    }

@@ -1,0 +1,170 @@
+    *
+    {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    body
+    {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .landing_room
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: change 10s infinite ease-in-out;
+        background: black;
+        /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) url(/image/img1.png.jpeg)); */
+        /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)); */
+        justify-content: center;
+    }
+    .block
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+    }
+    .block a
+    {
+        padding: 10px 24px;
+        text-decoration: none;
+        font-size: 30px;
+        border-radius: 20px;
+        font-weight: bolder;
+        background:linear-gradient(90deg, #f9d923, #00a19d, #0c87b7, #5f1575, #f9d923);
+        animation: glow 10s linear forwards;
+        background-size: 400%;
+        text-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 40px #fff,0 0 80px #fff,0 0 120px #fff;
+    }
+    @keyframes glow-animate
+    {
+        0%, 18%, 20%, 50.1%, 60%, 65.1%,80%, 90.1%, 92.1%, 100% 
+        {
+            color: #0e3742;
+            box-shadow: none;
+        }
+        18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%,100%
+        {
+            color: white;
+            box-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4 ;
+        }
+    }
+    .block a::before
+    {
+        content: '';
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: -1px;
+        filter: blur(36px);
+        z-index: -1 ;
+        background: inherit;
+    }
+    
+    .block a:hover
+    {
+        /* background: #034e88;
+        color: #fff; */
+        z-index: 1;
+        border-color: transparent;
+        background:linear-gradient(90deg, #f9d923, #00a19d, #0c87b7, #5f1575, #f9d923);
+        background-size: 400%;
+        box-shadow: 0 0 15px rgb(2, 4, 24);
+        animation: glow 10s linear forwards;
+        text-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 40px #fff,0 0 80px #fff,0 0 120px #fff;
+        box-shadow: 0 0 40px 20px #fff, 0 0 10px 10px #0ff;
+    }
+    .block a:hover::before
+    {
+        opacity: 1;
+        z-index: -1;
+    }
+    @keyframes glow
+    {
+        from
+        {
+            background-position: 0%;
+        }
+        to
+        {
+            background-position: 400%;
+        }
+    }
+    .block h1
+    {
+        color: #fff;
+        font-size: 60px;
+        letter-spacing: 15px;
+        text-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 40px #fff,0 0 80px #fff,0 0 120px #fff;
+    }
+    .content h1 span
+    {
+        color: #111;
+    }
+    @keyframes change
+        {
+            0%
+            {
+                /* background-image: url(image/img1.png); */
+                /* background-image: url("{% static "/images/img1.png" %}"); */
+                background-image: url(/static/images/img1.png);
+                /* background-position: center;
+                background-repeat: no-repeat; */
+            }
+            20%
+            {
+                background-image: url(/static/images/img2.png);
+                /* background-position: center;
+                background-repeat: no-repeat; */
+            }
+            40%
+            {
+                background-image: url(/static/images/img3.png);
+                /* background-position: center;
+                background-repeat: no-repeat; */
+            }
+            60%
+            {
+                background-image: url(/static/images/img4.png);
+                /* background-position: center;
+                background-repeat: no-repeat; */
+            }
+            80%
+            {
+                background-image: url(/static/images/img5.png);
+                /* background-position: center;
+                background-repeat: no-repeat; */
+            }
+            100%
+            {
+                background-image: url(/static/images/img4.png);
+                /* background-position: center;
+                background-repeat: no-repeat; */
+            }
+            45%
+            {
+                background-image: url(/static/images/into1.jpeg);
+            }
+            70%
+            {
+                background-image: url(/static/images/intro2.jpg);
+            }
+            35%
+            {
+                background-image: url(/static/images/intro4.jpg);
+            }
+            85%
+            {
+                background-image: url(/static/images/intro5.jpeg);
+            }
+
+        }
